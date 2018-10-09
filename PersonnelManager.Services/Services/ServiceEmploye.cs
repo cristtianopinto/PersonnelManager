@@ -32,7 +32,15 @@ namespace PersonnelManager.Business.Services
         }
         public void EnregistrerCadre(Cadre cadre)
         {
-            this.dataEmploye.EnregistrerCadre(cadre);
+            if(cadre.DateEmbauche >DateTime.Now.AddMonths(-3))
+            {
+                this.dataEmploye.EnregistrerCadre(cadre);
+            }
+            else
+            {
+                throw new BusinessException("La date du cadre n'est pas autorisé");
+            }
+            
         }
 
         public void EnregistrerOuvrier(Ouvrier ouvrier)

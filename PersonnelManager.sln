@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonnelManager.Business",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonnelManager.Dal", "PersonnelManager.Data\PersonnelManager.Dal.csproj", "{BAC10418-3B08-4712-8E72-0F2CB6E7EF32}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{45137779-5519-480A-B6F9-2A0B297F0540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonnelManagerTests", "PersonnelManagerTests\PersonnelManagerTests.csproj", "{95E4C0E1-39C3-4DCC-9BA9-3F91F4359095}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{BAC10418-3B08-4712-8E72-0F2CB6E7EF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAC10418-3B08-4712-8E72-0F2CB6E7EF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAC10418-3B08-4712-8E72-0F2CB6E7EF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E4C0E1-39C3-4DCC-9BA9-3F91F4359095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E4C0E1-39C3-4DCC-9BA9-3F91F4359095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E4C0E1-39C3-4DCC-9BA9-3F91F4359095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E4C0E1-39C3-4DCC-9BA9-3F91F4359095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95E4C0E1-39C3-4DCC-9BA9-3F91F4359095} = {45137779-5519-480A-B6F9-2A0B297F0540}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42BE5CF5-2032-404A-9F4D-59102DEE1102}
